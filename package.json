@@ -1,0 +1,22 @@
+{
+  "name": "next-presentation",
+  "version": "1.0.0",
+  "description": "Presentation of nextjs written in nextjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nextjs",
+    "presentation"
+  ],
+  "author": "Riccardo Canella <canella_riccardo@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
