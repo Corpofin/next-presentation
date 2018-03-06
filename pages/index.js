@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Router from 'next/router'
 
 import Slide from '../components/slide'
+import Image from '../components/img'
 import CustomLink from  '../components/link'
 
 
@@ -11,7 +12,7 @@ export default class Index extends Component{
         window.prevSlide = ''
         window.nextSlide = '/two'
         setTimeout(()=>{
-            document.addEventListener("keydown", function (e) {
+            document.addEventListener("keydown", (e) => {
                 e.stopPropagation()
                 e.preventDefault()
                 if(e.keyCode === 37){
@@ -26,7 +27,8 @@ export default class Index extends Component{
     render(){
         return <Slide>
             <CustomLink type="next" href='/two'></CustomLink>
-            <h1>Slide1</h1>
+            <Image src="/static/img/next.png" />
+            <h1>Server side rendering made simple</h1>
         </Slide>
     }
 }
