@@ -9,7 +9,8 @@ export default class MyDocument extends Document {
     const globalStyles = () => {
       injectGlobal`
          body{
-           margin:0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
          }
       `
       return null
@@ -22,6 +23,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>NextJS Presentation</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
           {this.props.globalStyles}
           {this.props.styleTags}
         </Head>
