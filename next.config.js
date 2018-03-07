@@ -7,5 +7,13 @@ module.exports = {
         '@utils': resolve(__dirname, 'utils')
       }
       return config
+    },
+    exportPathMap: function(){
+        return {
+            '/': { page: '/' },
+            '/two': { page: '/two' },
+            '/start': { page: '/start' },
+            '/gift': { page: '/gift' }
+        }
     }
   }
