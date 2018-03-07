@@ -1,13 +1,15 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet,injectGlobal } from 'styled-components'
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet, injectGlobal } from "styled-components";
 
-import initializeKeyboard from '@utils/keyboard'
+import initializeKeyboard from "@utils/keyboard";
 
 export default class MyDocument extends Document {
-  static getInitialProps ({ renderPage }) {
-    const sheet = new ServerStyleSheet()  
-    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))
-    const styleTags = sheet.getStyleElement()
+  static getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet();
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />)
+    );
+    const styleTags = sheet.getStyleElement();
     injectGlobal`
          body{
             margin: 0;
@@ -27,29 +29,34 @@ export default class MyDocument extends Document {
          span{
            background:rgba(27,31,35,0.05);
          }
-    `
-    return { ...page, styleTags } 
+    `;
+    return { ...page, styleTags };
   }
 
-  componentDidMount(){
-    initializeKeyboard()
+  componentDidMount() {
+    initializeKeyboard();
   }
 
-  render () {    
+  render() {
     return (
       <html>
         <Head>
           <title>NextJS Presentation</title>
-          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=VT323"
+            rel="stylesheet"
+          />
           {this.props.styleTags}
         </Head>
         <body>
-          
           <Main />
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }

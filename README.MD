@@ -2,7 +2,7 @@
 
 # Slides for Nextjs talk
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/thecreazy/next-presentation)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/thecreazy/next-presentation) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
 ## This project is born to help me to the presentation of Nextjs
