@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-import Router from 'next/router'
+import Link from 'next/link'
 
 import initializeKeyboard from '@utils/keyboard'
 
@@ -17,6 +17,8 @@ export default class Index extends Component{
         return <Slide>
             <CustomLink type="prev" href='/prefetching'></CustomLink>
             <h1>The end</h1>
+            <p>Twitter:  <Link href="https://twitter.com/ricanella92"><a target="_blank">@ricanella92</a></Link></p>
+            <p>Github: <Link href="https://github.com/thecreazy/next-presentation.git"><a target="_blank">https://github.com/thecreazy/next-presentation.git</a></Link> </p>
         </Slide>
     }
 }
