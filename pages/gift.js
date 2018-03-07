@@ -6,10 +6,12 @@ import Slide from '../components/slide'
 import CustomLink from  '../components/link'
 import Image from '../components/img'
 
+import initializeKeyboard from '../utils/keyboard'
+
 export default class Index extends Component{
     componentDidMount(){
-        window.prevSlide = '/two'
-        window.nextSlide = '/three'
+        window.prevSlide = '/start'
+        window.nextSlide = '/routing'
     }
     render(){
         return <Slide>

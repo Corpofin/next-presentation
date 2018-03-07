@@ -2,14 +2,16 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 import Router from 'next/router'
 
+import initializeKeyboard from '../utils/keyboard'
+
 import Slide from '../components/slide'
 import CustomLink from  '../components/link'
 import Image from '../components/img'
 
 export default class Index extends Component{
     componentDidMount(){
-        window.prevSlide = '/two'
-        window.nextSlide = '/three'
+        window.prevSlide = '/gift'
+        window.nextSlide = '/ecosystem'
     }
     render(){
         return <Slide>
@@ -19,7 +21,9 @@ export default class Index extends Component{
             <ol>
                 <li>By default every file <span>.js</span> inside the page folder is a route</li>
                 <li>Every route called and not registered will be catch in a 404 page</li>
+                <li>Possibility to Route Masking </li>
             </ol>
+            <Image src="/static/img/routing.png" type="big" />
         </Slide>
     }
 }
