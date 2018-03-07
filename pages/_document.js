@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet,injectGlobal } from 'styled-components'
 
-import initializeKeyboard from '../utils/keyboard'
+import initializeKeyboard from '@utils/keyboard'
 
 export default class MyDocument extends Document {
   static getInitialProps ({ renderPage }) {

@@ -1,11 +1,9 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
 
-import initializeKeyboard from '../utils/keyboard'
-
-import Slide from '../components/slide'
-import Image from '../components/img'
-import CustomLink from  '../components/link'
+import Slide from '@components/slide'
+import Image from '@components/img'
+import CustomLink from  '@components/link'
 
 
 export default class Index extends Component{

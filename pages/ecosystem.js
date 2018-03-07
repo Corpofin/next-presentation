@@ -2,11 +2,11 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 import Router from 'next/router'
 
-import Slide from '../components/slide'
-import CustomLink from  '../components/link'
-import Image from '../components/img'
+import Slide from '@components/slide'
+import CustomLink from  '@components/link'
+import Image from '@components/img'
 
-import initializeKeyboard from '../utils/keyboard'
+import initializeKeyboard from '@utils/keyboard'
 
 export default class Index extends Component{
     componentDidMount(){
