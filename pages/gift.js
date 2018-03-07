@@ -26,6 +26,7 @@ export default class Index extends Component{
                 <li>Automatic code splitting ⛏</li>
                 <li>Prefetching 💉</li>
                 <li>Static exports 📦</li>
+                <li>Use of a custom server 🤹🏻</li>
             </ol>
         </Slide>
     }

@@ -10,7 +10,7 @@ import Image from '@components/img'
 
 export default class Index extends Component{
     componentDidMount(){
-        window.prevSlide = '/prefetching'
+        window.prevSlide = '/customserver'
         window.nextSlide = undefined
     }
     render(){

@@ -11,11 +11,11 @@ import Image from '@components/img'
 export default class Index extends Component{
     componentDidMount(){
         window.prevSlide = '/prefetching'
-        window.nextSlide = '/end'
+        window.nextSlide = '/customserver'
     }
     render(){
         return <Slide>
-            <CustomLink type="next" href='/end'></CustomLink>
+            <CustomLink type="next" href='/customserver'></CustomLink>
             <CustomLink type="prev" href='/prefetching'></CustomLink>
             <h1>Static exports 📦</h1>
             <h2>Nextjs allows you to export everything we have done in static files. to do this:</h2>
