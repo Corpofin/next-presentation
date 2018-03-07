@@ -13,7 +13,7 @@ export default class Index extends Component{
     }
     render(){
         return <Slide>
-            <CustomLink type="next" href='/structure'></CustomLink>
+            <CustomLink type="next" href='/gift'></CustomLink>
             <CustomLink type="prev" href='/two'></CustomLink>
             <h1>Start with Nextjs it's very simple</h1>
             <ol>
@@ -21,9 +21,9 @@ export default class Index extends Component{
                 <li>$ cd next-presentation</li>
                 <li>$ npm init</li>
                 <li>$ yarn add next react react-dom</li>
-                <li>populate <span>./pages/index.js</span> with <span>export default () => <component>Welcome to next.js!</component> </span></li>
+                <li>Populate <span>./pages/index.js</span> with <span>export default () => <component>Welcome to next.js!</component> </span></li>
                 <li>$ next</li>
-                <li>go to <span>http://localhost:3000</span></li>
+                <li>Go to <span>http://localhost:3000</span></li>
             </ol>
         </Slide>
     }

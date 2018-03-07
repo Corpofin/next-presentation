@@ -13,10 +13,9 @@ export default class Index extends Component{
     }
     render(){
         return <Slide>
-            <CustomLink type="next" href='/'></CustomLink>
-            <CustomLink type="prev" href='/start'></CustomLink>
-            <h1>Structure</h1>
-            
+            <CustomLink type="next" href='/end'></CustomLink>
+            <CustomLink type="prev" href='/prefetching'></CustomLink>
+            <h1>The end</h1>
         </Slide>
     }
 }

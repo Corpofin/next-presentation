@@ -13,7 +13,7 @@ const StyledLink = styled.a`
 
 export default class CustomLink extends Component{
     render(){
-        return <Link href={this.props.href}>
+        return <Link prefetch href={this.props.href}>
             <StyledLink type={this.props.type}>{this.props.type}</StyledLink>
         </Link>
     }
